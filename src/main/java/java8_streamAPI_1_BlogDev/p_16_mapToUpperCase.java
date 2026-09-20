@@ -39,7 +39,7 @@ public class p_16_mapToUpperCase {
  * <p>
  * *List list.stream() → Stream<T>
  * Used to process List elements as a Stream List<String> list =
- * Arrays.asList("a", "b"); list.stream().forEach(System.out::println);
+ * Arrays.asLis("a", "b"); list.stream().forEach(System.out::println);
  * <p>
  * *Set set.stream() → Stream<T>
  * Works same as List, but order is not guaranteed Set<String> set = new
