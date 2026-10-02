@@ -3,9 +3,9 @@ package _java8_streamAPI_4_JavaConceptOfDay_2a_RecordClass;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
-import static _java8_streamAPI_4_JavaConceptOfDay_2a_RecordClass.Main.employeeList;
 
 /**
 * @see <a href="https://javaconceptoftheday.com/solving-real-time-queries-using-java-8-features-employee-management-system/">
@@ -20,9 +20,23 @@ class c_3_AverageAgeByGender {
                 new Employee(13, "Anmanika Jee", 30, "F", "Finance", 2019, 80000)
         );
 
-//        double avgAge = empList.stream() //
-//                .map(Employee::age)
-//                .average()
-//                .get();
+        empList.stream().collect(Collectors.groupingBy(
+                Employee::gender,
+                Collectors.averagingInt(Employee::age)
+        )).forEach((k,v)-> System.out.println(k+"->"+v));
+
     }
 }
+
+/**
+
+| Collector           | Return type |
+        | ------------------- | ----------- |
+        | `averagingInt()`    | **Double**  |
+        | `averagingLong()`   | **Double**  |
+        | `averagingDouble()` | **Double**  |
+        | `summingInt()`      | **Integer** |
+        | `summingLong()`     | **Long**    |
+        | `counting()`        | **Long**    |
+
+ */

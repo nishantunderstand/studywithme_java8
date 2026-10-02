@@ -1,6 +1,4 @@
-package _constructor;
-
-import java.sql.SQLOutput;
+package constructor;
 
 class A {
     A(){

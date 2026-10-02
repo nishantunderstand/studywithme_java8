@@ -1,7 +1,6 @@
-package _java8_streamAPI_MethodReference;
+package java8_streamAPI_MethodReference;
 
 import java.util.*;
-import java.util.function.*;
 
 public class MethodReferenceDemo {
 

@@ -1,8 +1,8 @@
-package thread_3_ForkJoin;
+package thread_3_ForkJoin_MergeSort;
 
 import java.util.Arrays;
 
-public class MergeSort {
+public class TraditionalMergeSort {
 
     public static void mergeSort(int[] arr, int left, int right) {
 

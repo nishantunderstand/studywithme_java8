@@ -17,9 +17,6 @@ public class f_6_FindMaxElement_IMP {
         Integer max = myList.stream().max(Integer::compare).get();
         System.out.println(max);
 
-
-
-
         System.out.println("===== Array Approach ====");
         int[] arr = {10, 15, 8, 49, 25, 98, 98, 32, 15, 9999999};
         Integer max1 = Arrays.stream(arr).boxed().max(Integer::compare).get();

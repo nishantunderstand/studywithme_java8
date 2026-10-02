@@ -1,4 +1,4 @@
-package thread_3_ForkJoin;
+package thread_3_ForkJoin_MergeSort;
 
 import java.util.Arrays;
 import java.util.concurrent.ForkJoinPool;
@@ -65,9 +65,7 @@ public class ForkJoinMergeSort extends RecursiveAction {
         int[] arr = {9, 5, 2, 8, 1, 6, 3, 7, 4};
 
         ForkJoinPool pool = new ForkJoinPool();
-
         pool.invoke(new ForkJoinMergeSort(arr, 0, arr.length - 1));
-
         System.out.println(Arrays.toString(arr));
     }
 }

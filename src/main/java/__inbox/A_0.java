@@ -1,6 +1,5 @@
 package __inbox;
 
-
 interface B {
     default void show() {
         System.out.println("B");

@@ -15,7 +15,7 @@ public class p_16_mapToUpperCase {
         List<String> names = Arrays.asList("aa", "bb", "cc", "cdeF", "ffHH");
 
         List<String> namesList = names.stream()
-                .map(String::toUpperCase)
+                .map(String::toUpperCase) //<--
                 .collect(Collectors.toList());
         namesList.forEach(System.out::println);
 

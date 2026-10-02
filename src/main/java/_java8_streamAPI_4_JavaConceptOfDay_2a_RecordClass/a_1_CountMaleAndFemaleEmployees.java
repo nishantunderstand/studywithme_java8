@@ -23,7 +23,6 @@ class a_1_CountMaleAndFemaleEmployees {
         );
         empList.stream().forEach(System.out::println);
 
-
         System.out.println(empList.stream()
                 .collect(Collectors.groupingBy(
                         Employee::gender,
@@ -39,7 +38,6 @@ class a_1_CountMaleAndFemaleEmployees {
         for(Map.Entry<String,Long> entry : result.entrySet()){
             System.out.println(entry.getKey()+ " -> "+  entry.getValue());
         }
-
 
         System.out.println("====== Saturday, September 12, 2026 5:28:51 PM ======");
         empList.stream()

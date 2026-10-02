@@ -26,6 +26,7 @@ public class ThreadPlatformAndVirtual {
             System.out.println("Virtual Thread-2");
         });
 
+        // TODO  Difference B/W Them
     }
 }
 

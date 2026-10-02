@@ -10,7 +10,6 @@ public class Thread_1_Runnable {
         Runnable task = ()->System.out.println("Hello By Runnable");
         ex.execute(task);
 
-
         ex.shutdown();
     }
 }

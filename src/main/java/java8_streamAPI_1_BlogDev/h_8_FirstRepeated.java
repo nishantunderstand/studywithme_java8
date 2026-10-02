@@ -22,7 +22,7 @@ public class h_8_FirstRepeated {
                                 LinkedHashMap::new,
                                 Collectors.counting()
                         ))
-                        .entrySet()
+                        .entrySet()//<--
                         .stream()
                         .filter(e -> e.getValue() > 1L) //<--
                         .map(e -> e.getKey())
@@ -40,7 +40,7 @@ public class h_8_FirstRepeated {
                 .entrySet()
                 .stream()
                 .filter(e -> e.getValue() > 1L)
-                .map(e -> e.getKey()) //<--s
+                .map(e -> e.getKey()) //<--s || k is Uppercase
                 .findFirst()
                 .ifPresent(System.out::println);
 
