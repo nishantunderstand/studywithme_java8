@@ -11,9 +11,19 @@ public class ToUpperCase {
 		List<String> list = Arrays.asList("java", "spring", "boot");
 		
 		//List<String> stringList = list.stream().map(n -> n.toUpperCase()).collect(Collectors.toList());
-		List<String> stringList = list.stream().map(String::toUpperCase).collect(Collectors.toList());
+
+        List<String> stringList =
+                list.stream()
+                        .map(String::toUpperCase)
+                        .collect(Collectors.toList());
+
+
+        System.out.println(stringList);
+
+        System.out.println("====== Tuesday, October 6, 2026 10:39:57 PM ======");
+        list.stream().map(String::toUpperCase).forEach(System.out::println);
 		
-		System.out.println(stringList);
+
 	}
 
 }

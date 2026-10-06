@@ -11,9 +11,11 @@ public class MinMax {
 		
 		int max = list.stream().max(Integer::compareTo).get();
 		int min = list.stream().min(Integer::compareTo).get();
+
 //		System.out.print("Max = "+list.stream().max(Integer::compareTo).hashCode()
 //				+", Min = "+list.stream().min(Integer::compareTo).hashCode());
-		System.out.print("Max = "+max
+
+        System.out.print("Max = "+max
 				+", Min = "+min);
 	}
 

@@ -3,7 +3,7 @@ package java8_L3_beginner;
 import java.util.Arrays;
 import java.util.List;
 
-public class CountStringLenght {
+public class CountStringLength {
 
 	public static void main(String[] args) {
 		

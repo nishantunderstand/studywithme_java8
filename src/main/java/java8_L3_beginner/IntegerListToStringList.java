@@ -10,7 +10,10 @@ public class IntegerListToStringList{
 		
 		List<Integer> list = Arrays.asList(10, 20, 30);
 		
-		List<String> stringlist = list.stream().map(String::valueOf).collect(Collectors.toList());
-		System.out.println(stringlist);
+		List<String> stringlist = list.stream()
+                .map(String::valueOf)
+                .collect(Collectors.toList());
+
+        System.out.println(stringlist);
 	}
 }

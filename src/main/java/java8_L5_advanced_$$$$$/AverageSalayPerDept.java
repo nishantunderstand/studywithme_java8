@@ -1,17 +1,17 @@
-package java8_L5_advanced;
+package java8_L5_advanced_$$$$$;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class NoOfEmpInDept {
+public class AverageSalayPerDept {
 
 	public static void main(String[] args) {
-		
+
 		List<Employee> emp = EmployeeData.getEmployees();
 		
 		System.out.println(emp.stream().collect(Collectors
-				.groupingBy(Employee::getDept, Collectors
-						.counting())));
+				.groupingBy(Employee::getDept,Collectors
+						.averagingDouble(Employee::getSalary))));
 
 	}
 

@@ -11,7 +11,9 @@ public class StringStartwith {
 		
 		List<String> list = Arrays.asList("Apple", "Banana", "Avocado", "Mango");
 		
-		List<String> stringList = list.stream().filter(n -> n.startsWith("A")).collect(Collectors.toList());
-		System.out.println(stringList);
+		List<String> stringList = list.stream()
+                .filter(n -> n.startsWith("A"))
+                .collect(Collectors.toList());
+        System.out.println(stringList);
 	}
 }
