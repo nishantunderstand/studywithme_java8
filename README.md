@@ -1,3 +1,11 @@
+Tuesday, October 6, 2026 11:07:46 PM
+
+- You can add $$$ in the package name 
+- This will act as place holder.
+- So that i need to know where to resume at.
+
+---
+
 Sunday, September 13, 2026 7:15:26 PM
 - Always reason the code
 - Return type is really needed to understand the code.
