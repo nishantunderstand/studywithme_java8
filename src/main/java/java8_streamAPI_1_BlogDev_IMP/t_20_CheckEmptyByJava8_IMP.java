@@ -1,4 +1,4 @@
-package java8_streamAPI_1_BlogDev;
+package java8_streamAPI_1_BlogDev_IMP;
 
 import java.util.*;
 
