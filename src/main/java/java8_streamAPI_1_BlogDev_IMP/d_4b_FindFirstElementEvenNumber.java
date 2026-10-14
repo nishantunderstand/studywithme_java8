@@ -7,13 +7,21 @@ import java.util.List;
 public class d_4b_FindFirstElementEvenNumber {
     public static void main(String[] args) {
         System.out.println("======  Find First Even Number  ======");
-        List<Integer> myList = Arrays.asList(1, 3, 5, 7);
+        List<Integer> myList = Arrays.asList(1, 3, 5,7);
         Integer res = myList.stream()
                 .filter(n -> n % 2 == 0)
                 .findFirst()
                 .orElse(-1);
 
         System.out.println(res);
+
+        System.out.println("====== Tuesday, October 13, 2026 2:25:55 PM ======");
+        myList.stream()
+                .filter(n->n%2==0)
+                .findFirst()
+                .ifPresentOrElse(System.out::println,
+                        ()->System.out.println("-1")
+                );
     }
 }
 

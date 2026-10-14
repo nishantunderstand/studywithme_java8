@@ -17,6 +17,7 @@ public class t_20_CheckEmptyByJava8_IMP {
         }
 
         System.out.println("======WORKING=======");
+
         Optional.ofNullable(list)
                 .filter(l -> !l.isEmpty()) //<--
                 .ifPresentOrElse(
