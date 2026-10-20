@@ -1,4 +1,4 @@
-package _Exception_Day0;
+package Exception_Day0;
 import java.io.IOException;
 
 public class Test {

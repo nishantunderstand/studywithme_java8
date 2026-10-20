@@ -1,4 +1,4 @@
-package java8_L5_advanced_$$$$$;
+package java8_L5_advanced;
 
 public class Employee {
 

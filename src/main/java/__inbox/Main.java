@@ -20,10 +20,3 @@ public class Main {
 }
 
 
-/**
- *
- *
- * input: Spring Boot Java
- * output: gnirpS tooB avaJ
- *
- */

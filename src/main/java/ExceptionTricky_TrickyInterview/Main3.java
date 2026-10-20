@@ -1,12 +1,12 @@
-package _ExceptionTricky_TrickyInterview;
+package ExceptionTricky_TrickyInterview;
 
 import java.io.IOException;
 
-class Main2 {
+class Main3 {
     public static void main(String[] args) {
         try{
             display();
-        }catch(Exception e){
+        }catch(IOException e){
             System.out.println(e.getMessage()+"1");
         }
     }

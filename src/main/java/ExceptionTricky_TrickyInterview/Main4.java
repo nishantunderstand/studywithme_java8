@@ -1,4 +1,4 @@
-package _ExceptionTricky_TrickyInterview;
+package ExceptionTricky_TrickyInterview;
 
 import java.io.IOException;
 

@@ -1,4 +1,4 @@
-package _Exception_Tricky_Day1;
+package Exception_Tricky_Day1;
 
 
 class Main5 {

@@ -1,4 +1,4 @@
-package java8_L5_advanced_$$$$$;
+package java8_L5_advanced;
 
 import java.util.Arrays;
 import java.util.List;
