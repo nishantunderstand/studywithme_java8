@@ -1,4 +1,4 @@
-package _java8_streamAPI_4_JavaConceptOfDay_2a_RecordClass;
+package ___java8_streamAPI_4_JavaConceptOfDay_2a_RecordClass;
 
 import java.util.Arrays;
 import java.util.List;
@@ -21,6 +21,9 @@ class a_1_CountMaleAndFemaleEmployees {
                 new Employee(12, "Anmanika", 24, "F", "IT", 2023, 70000),
                 new Employee(13, "Anmanika Jee", 30, "F", "Finance", 2019, 80000)
         );
+
+
+
         empList.stream().forEach(System.out::println);
 
         System.out.println(empList.stream()
@@ -40,11 +43,14 @@ class a_1_CountMaleAndFemaleEmployees {
         }
 
         System.out.println("====== Saturday, September 12, 2026 5:28:51 PM ======");
+
         empList.stream()
                 .collect(Collectors.groupingBy(
                         Employee::gender,
                         Collectors.counting()
                 )).forEach((k,v)->System.out.println(k+"->"+v));
+
+
 
 
 

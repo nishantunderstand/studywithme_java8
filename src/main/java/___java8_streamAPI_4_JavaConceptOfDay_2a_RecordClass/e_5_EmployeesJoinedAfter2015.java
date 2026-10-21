@@ -1,4 +1,4 @@
-package _java8_streamAPI_4_JavaConceptOfDay_2a_RecordClass;
+package ___java8_streamAPI_4_JavaConceptOfDay_2a_RecordClass;
 
 import java.util.Arrays;
 import java.util.List;
@@ -38,6 +38,13 @@ public class e_5_EmployeesJoinedAfter2015 {
                         .toList();
         System.out.println(result16);
 
+
+
+        System.out.println("====== Thursday, October 22, 2026 12:52:34 AM ======");
+
+        empList.stream()
+                .filter(e ->e.yearOfJoining()>2015)
+                .forEach(System.out::println);
 
 
     }

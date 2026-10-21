@@ -1,8 +1,9 @@
-package _java8_streamAPI_4_JavaConceptOfDay_2a_RecordClass;
+package ___java8_streamAPI_4_JavaConceptOfDay_2a_RecordClass;
 
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
 * @see <a href="https://javaconceptoftheday.com/solving-real-time-queries-using-java-8-features-employee-management-system/">
@@ -63,6 +64,27 @@ class b_2_ListAllDepartments {
                 .distinct()
                 .map(Employee::yearOfJoining)
                 .forEach(System.out::println);
+
+
+        System.out.println("====== Wednesday, October 21, 2026 11:10:47 PM ======");
+        // This is correct , We don' need to counting
+        empList.stream()
+                .collect(
+                        Collectors.groupingBy(
+                                Employee::department,
+                                Collectors.counting()
+                        )
+                )
+                .forEach((k,v)->System.out.println(k+":"+v));
+
+
+        System.out.println("====== Wednesday, October 21, 2026 11:13:05 PM ======");
+        empList.stream()
+                .collect(
+                        Collectors.groupingBy(Employee::department)
+                )
+                .forEach((k,v)->System.out.println(k));
+
 
     }
 }

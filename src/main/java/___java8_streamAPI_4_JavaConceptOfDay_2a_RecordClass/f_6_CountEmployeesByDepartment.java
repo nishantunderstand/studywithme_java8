@@ -1,9 +1,8 @@
-package _java8_streamAPI_4_JavaConceptOfDay_2a_RecordClass;
+package ___java8_streamAPI_4_JavaConceptOfDay_2a_RecordClass;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 /**

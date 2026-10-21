@@ -1,6 +1,4 @@
-package __inbox;
-
-import javax.swing.*;
+package _inbox;
 
 public class Main {
     public static void main(String[] args) {
