@@ -1,3 +1,4 @@
+```
 class Main {
 public static void main(String[] args) {
 List<Employee> empList = Arrays.asList(
@@ -8,6 +9,8 @@ new Employee(13, "Anmanika Jee", 30, "F", "Finance", 2019, 80000)
 );
 }
 }
+
+
 
 
 record Employee(int id, String name, int age ,String gender, String department,int yearOfJoining, double salary) {
@@ -22,7 +25,8 @@ new Employee(13, "Anmanika Jee", 30, "F", "Finance", 2019, 80000)
 );
 }
 }
+```
 
 
 
-![EmployeeManagementSystem](/EmployeeManagementSystem.png)
+![EmployeeManagementSystem](EmployeeManagementSystem.png)
