@@ -46,5 +46,8 @@ class a_1_CountMaleAndFemaleEmployees {
                         Collectors.counting()
                 )).forEach((k,v)->System.out.println(k+"->"+v));
 
+
+
+
     }
 }
