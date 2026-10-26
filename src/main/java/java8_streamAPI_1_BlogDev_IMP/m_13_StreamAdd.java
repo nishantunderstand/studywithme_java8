@@ -21,3 +21,5 @@ public class m_13_StreamAdd {
 }
 
 
+// What if both of Array not list ??  🤔🤔🤔
+

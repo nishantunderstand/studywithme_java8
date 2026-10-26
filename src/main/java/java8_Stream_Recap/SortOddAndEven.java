@@ -19,7 +19,6 @@ public class SortOddAndEven {
         System.out.println("====== Thursday, October 15, 2026 1:19:36 PM ======");
         System.out.println("====== In Descending Order  ======");
 
-
         myList.stream()
                 .sorted(Comparator.comparingInt((Integer n)->n%2==0?1:0).reversed())
                 .forEach(System.out::println);

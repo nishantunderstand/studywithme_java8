@@ -9,9 +9,10 @@ public class AverageSalayPerDept {
 
 		List<Employee> emp = EmployeeData.getEmployees();
 		
-		System.out.println(emp.stream().collect(Collectors
-				.groupingBy(Employee::getDept,Collectors
-						.averagingDouble(Employee::getSalary))));
+		System.out.println(emp.stream()
+                .collect(Collectors.groupingBy(
+                        Employee::getDept,
+                        Collectors.averagingDouble(Employee::getSalary))));
 
 	}
 

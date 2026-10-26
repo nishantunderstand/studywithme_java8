@@ -8,9 +8,7 @@ public class SummaryStats {
 	public static void main(String[] args) {
 		
 		List<Employee> emp = EmployeeData.getEmployees();
-		
 		DoubleSummaryStatistics stats = emp.stream().mapToDouble(Employee::getSalary).summaryStatistics();
-		
 		System.out.println(stats);
 
 	}
